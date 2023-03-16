@@ -1,7 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "primuslearning-app"
+    bucket = "terraform-state-bucket-masabi"
     region = "us-east-1"
-    key = "eks/terraform.tfstate"
+    key = "global/eks/terraform.tfstate"
+    profile = "masabi23"
   }
 }
